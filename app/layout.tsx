@@ -8,7 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-       <head>
+      <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
@@ -16,10 +16,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-    <body className="min-h-screen bg-gray-200 flex flex-col items-center">
-      <Header />
-      <main className="w-full px-6">{children}</main> 
-    </body>
-  </html>
+      <body className="min-h-screen bg-[#eceef3] flex flex-col items-center">
+        <Header />
+        <main className="w-full px-6">{children}</main>
+      </body>
+    </html>
   );
 }

@@ -51,7 +51,7 @@ const SalesReports = () => {
 
       <div className="grid md:grid-cols-2 gap-6 p-6">
         {/* Donut Chart Card */}
-        <div className="bg-white rounded-xl shadow-md p-6">
+        <div className="bg-white  rounded-xl shadow-md p-6">
           <h2 className="text-xl font-semibold mb-4">Deal Revenue Forecast</h2>
           <DonutChart
             data={donutData}
@@ -65,7 +65,7 @@ const SalesReports = () => {
         </div>
 
         {/* Line Chart Card */}
-        <div className="bg-white rounded-xl shadow-md p-6">
+        <div className="bg-white  rounded-xl shadow-md p-6">
           <h2 className="text-xl font-semibold mb-4">Email Performance</h2>
           <LineChart data={lineData} />
         </div>
