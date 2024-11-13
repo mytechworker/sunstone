@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { GoBell } from "react-icons/go";
 
 const Header = () => (
-  <header className="w-full bg-gray-200 fixed py-4 px-6 flex items-center justify-between z-50">
+  <header className="w-full bg-[#eceef3] fixed py-4 px-6 flex items-center justify-between z-50">
     {/* Logo and Title */}
     <div className="flex items-center gap-3">
       <div className="w-8 h-8 bg-[#7662e9] rounded-lg flex items-center justify-center">
@@ -28,7 +28,7 @@ const Header = () => (
       <GoBell className="text-[#1c1f24] w-6 h-6" />
       <div className="flex px-3.5 py-1.5 bg-white rounded-xl items-center gap-3">
         <div className="w-8 h-8 bg-[#4c0606] rounded-full overflow-hidden">
-          <Image alt="Profile" width={34} height={34} src="https://via.placeholder.com/34x34" />
+          <Image alt="Profile" width={34} height={34} src="/images/person.png" />
         </div>
         <div className="flex items-center cursor-pointer">
           <div>

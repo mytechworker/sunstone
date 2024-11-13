@@ -26,13 +26,13 @@ const DonutChart = ({ data, overlayContent }) => {
   };
 
   return (
-    <div className="relative h-[500px] flex items-center justify-center border border-gray-200 rounded-xl p-4">
+    <div className="relative h-[300px] flex items-center justify-center border border-gray-200 rounded-xl p-4">
       {overlayContent && (
         <div className="absolute text-center">
           {overlayContent}
         </div>
       )}
-      <ReactECharts option={donutOptions} style={{ height: 500, width: '100%' }} />
+      <ReactECharts option={donutOptions} style={{ height: 300, width: '100%' }} />
     </div>
   );
 };
