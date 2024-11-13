@@ -1,12 +1,12 @@
-"use client"
+import Message from '@/components/messeges/Messege'
 import React from 'react'
 
-const Message = () => {
+function MessegePage() {
   return (
-    <div>
-      Message
-    </div>
+    <>
+      <Message />
+    </>
   )
 }
 
-export default Message
+export default MessegePage

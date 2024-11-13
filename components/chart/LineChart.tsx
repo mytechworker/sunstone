@@ -18,7 +18,7 @@ const LineChart = ({ data }) => {
 
   return (
     <div className="rounded-lg p-4">
-      <ReactECharts option={lineOptions} style={{ height: 500, width: '100%' }} />
+      <ReactECharts option={lineOptions} style={{ height: 300, width: '100%' }} />
     </div>
   );
 };

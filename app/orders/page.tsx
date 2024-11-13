@@ -11,11 +11,11 @@ const OrderPage = () => {
     ];
 
     const totals = {
-        landedCost: '$0.00',
+        landedCostSubtotal: '$0.00',
         itemSubtotal: '$1,531.22',
-        vat: '$153.12',
+        plusvat: '$153.12',
         totalUnits: '34',
-        totalAmount: '$1,684.34'
+        total: '$1,684.34'
     };
 
     const [orderDetails] = useState(orderDetailsData);
@@ -97,7 +97,7 @@ const OrderPage = () => {
                                     </td>
                                     <td className="px-4 py-3">{order.orderNo}</td>
                                     <td className="px-4 py-3 flex items-center gap-2">
-                                        <Image alt="" width={32} height={32} className="w-8 h-8 rounded-lg" src="https://via.placeholder.com/32x32" />
+                                        <Image alt="" width={32} height={32} className="w-8 h-8 rounded-lg" src="/images/orderimage.png" />
                                         <span>{order.itemName}</span>
                                     </td>
                                     <td className="px-4 py-3">{order.quantity}</td>
@@ -114,7 +114,7 @@ const OrderPage = () => {
 
                     <div className="mt-4 flex flex-col gap-2 text-sm font-medium text-[#6b6e74]">
                         {Object.entries(totals).map(([label, amount]) => (
-                            <div className={`flex justify-end ${label === 'totalAmount' ? 'font-semibold text-[#1c1f24]' : ''}`} key={label}>
+                            <div className={`flex justify-end ${label === 'total' ? 'font-semibold text-[#1c1f24]' : ''}`} key={label}>
                                 <span className="text-left w-1/5">{label.replace(/([A-Z])/g, ' $1').toUpperCase()}</span>
                                 <span className="text-right w-1/5">{amount}</span>
                             </div>
@@ -125,7 +125,7 @@ const OrderPage = () => {
                 <div className="w-full max-w-[360px] h-fit mt-4 p-6 bg-white rounded-2xl shadow-md">
                     <h2 className="text-xl font-medium text-[#1c1f24]">Customer</h2>
                     <div className="flex items-center gap-4 mt-4">
-                        <Image alt="" width={44} height={44} className="w-11 h-11 rounded-full" src="https://via.placeholder.com/44x44" />
+                        <Image alt="" width={44} height={44} className="w-11 h-11 rounded-full" src="/images/orderimage.png" />
                         <div>
                             <div className="text-sm font-medium text-[#1c1f24]">Alyssia Volkov</div>
                             <div className="text-xs font-normal text-[#6b6e74]">Customer for 3 months</div>
